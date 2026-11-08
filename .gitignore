@@ -1,0 +1,22 @@
+# Environnements virtuels
+venv-airflow/
+venv-dbt/
+
+# Données locales
+warehouse.duckdb
+*.duckdb.wal
+
+# dbt (fichiers générés)
+dbt_lab/target/
+dbt_lab/dbt_packages/
+dbt_lab/logs/
+
+# Airflow : on ne garde que les DAG
+airflow_home/*
+!airflow_home/dags/
+airflow_home/dags/__pycache__/
+
+# Python / divers
+__pycache__/
+*.pyc
+.env

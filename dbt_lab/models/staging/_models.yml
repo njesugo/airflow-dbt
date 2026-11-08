@@ -1,0 +1,9 @@
+version: 2
+models:
+  - name: stg_commandes
+    description: Commandes nettoyées
+    columns:
+      - name: id_commande
+        data_tests:
+          - unique
+          - not_null
